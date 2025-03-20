@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <h2>Friendship Calculator</h2>
+    <form id="friendshipForm" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdBQOfMGHpKuR3ywYqiN0ONdiiVCZC4we43OJoqWO0gOX0tlQ/formResponse" method="POST" target="hidden_iframe">
+        <input type="text" name="entry.147968778" id="name1" placeholder="Enter first name" required>
+        <input type="text" name="entry.2095327347" id="name2" placeholder="Enter second name" required>
+        
+        <button type="submit" onclick="calculateFriendship(event)">Calculate Friendship</button>
+    </form>
+
+    <h3 id="result"></h3>
+
+    <!-- Hidden iframe to prevent redirection -->
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
